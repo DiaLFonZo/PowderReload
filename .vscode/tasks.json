@@ -1,0 +1,25 @@
+{
+    "version":  "2.0.0",
+    "tasks":  [
+                  {
+                      "label":  "Flash PowderReload (COM7)",
+                      "type":  "process",
+                      "command":  "cmd.exe",
+                      "args":  [
+                                   "/d",
+                                   "/c",
+                                   "flash.cmd"
+                               ],
+                      "options":  {
+                                      "cwd":  "${workspaceFolder}"
+                                  },
+                      "group":  {
+                                    "kind":  "build",
+                                    "isDefault":  true
+                                },
+                      "problemMatcher":  [
+
+                                         ]
+                  }
+              ]
+}
